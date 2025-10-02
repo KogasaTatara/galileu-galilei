@@ -19,6 +19,15 @@ const routes: Routes = [
     path: 'page-detail/:id',
     loadChildren: () => import('./pages/page-detail/page-detail.module').then( m => m.PageDetailPageModule)
   },
+  {
+    path: 'page-detail2',
+    loadChildren: () => import('./pages/page-detail2/page-detail2.module').then( m => m.PageDetail2PageModule)
+  },
+      {
+    path: 'page-detail2/:id',
+    loadChildren: () => import('./pages/page-detail2/page-detail2.module').then( m => m.PageDetail2PageModule)
+  },
+
 ];
 
 @NgModule({
