@@ -1,8 +1,11 @@
 import { Component } from '@angular/core';
 
+<<<<<<< HEAD
 import { DataService, Item, Item2  } from '../services/data';
 import { Router } from '@angular/router';
 import { AlertController } from '@ionic/angular';
+=======
+>>>>>>> 2dee289 (Initial commit)
 @Component({
   selector: 'app-home',
   templateUrl: 'home.page.html',
@@ -11,6 +14,7 @@ import { AlertController } from '@ionic/angular';
 })
 export class HomePage {
 
+<<<<<<< HEAD
   items: Item[] = [];
   items2: Item2[] = [];
   constructor(
@@ -76,3 +80,8 @@ export class HomePage {
     await alert.present();
   }
 };
+=======
+  constructor() {}
+
+}
+>>>>>>> 2dee289 (Initial commit)

@@ -11,6 +11,7 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+<<<<<<< HEAD
   {
     path: 'page-detail',
     loadChildren: () => import('./pages/page-detail/page-detail.module').then( m => m.PageDetailPageModule)
@@ -28,6 +29,8 @@ const routes: Routes = [
     loadChildren: () => import('./pages/page-detail2/page-detail2.module').then( m => m.PageDetail2PageModule)
   },
 
+=======
+>>>>>>> 2dee289 (Initial commit)
 ];
 
 @NgModule({

@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD
   "name": "Galileu Galilei",
+=======
+  "name": "Ac1-Parte1-Tri3",
+>>>>>>> 2dee289 (Initial commit)
   "integrations": {
     "capacitor": {}
   },
