@@ -1,0 +1,7 @@
+{
+  "name": "Ac1-Parte1-Tri3",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
