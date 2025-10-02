@@ -22,10 +22,10 @@ export class HomePage {
     this.dataService.getItems ().subscribe(res => {this.items = res;});
   }
   addItem(){
-    this.router.navigateByUrl('/item-detail');
+    this.router.navigateByUrl('/page-detail');
   }
   editItem(item: Item){
-    this.router.navigateByUrl(`/item-detail/${item.id}`);
+    this.router.navigateByUrl(`/page-detail/${item.id}`);
   }
   async deleteItem(id: string) {
     const alert = await this.alertController.create({
