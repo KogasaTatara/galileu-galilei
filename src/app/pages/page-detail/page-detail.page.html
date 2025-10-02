@@ -9,13 +9,17 @@
 
 <ion-content class="ion-padding">
   <form #form="ngForm" (ngSubmit)="saveItem()">
+<<<<<<< HEAD
 
+=======
+>>>>>>> b3d5e06 (engraçado né? como as coisas funcionam...)
     <ion-item>
       <ion-label position="floating">Nome</ion-label>
       <ion-input type="text" [(ngModel)]="item.name" name="name" required></ion-input>
     </ion-item>
 
     <ion-item>
+<<<<<<< HEAD
       <ion-label position="floating">Espécie</ion-label>
       <ion-input type="text" [(ngModel)]="item.especie" name="especie"></ion-input>
     </ion-item>
@@ -36,6 +40,12 @@
     </ion-item>
 
 
+=======
+      <ion-label position="floating">Descrição</ion-label>
+      <ion-textarea rows="4" [(ngModel)]="item.description" name="description"></ion-textarea>
+    </ion-item>
+
+>>>>>>> b3d5e06 (engraçado né? como as coisas funcionam...)
     <ion-button expand="full" type="submit" [disabled]="!form.valid" class="ion-margin-top">
       Salvar
     </ion-button>

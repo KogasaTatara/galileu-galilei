@@ -17,6 +17,7 @@ import { Observable } from 'rxjs';
 export interface Item {
   id?: string,
   name: string,
+<<<<<<< HEAD
   especie?: string,
   raca?: string,
   idade?: number,
@@ -29,6 +30,9 @@ export interface Item2 {
   experiencia?: string,
   especial?: string,
   telefone?: number,
+=======
+  description: string,
+>>>>>>> b3d5e06 (engraçado né? como as coisas funcionam...)
   createdAt?: number,
 }
 @Injectable({
@@ -39,7 +43,11 @@ export class DataService {
 constructor(private firestore: Firestore){}
 
 getItems(): Observable<Item[]> {
+<<<<<<< HEAD
   const itemsCollectionRef = collection(this.firestore, 'items'); // <-- corrected
+=======
+  const itemsCollectionRef = collection(this.firestore, 'items');
+>>>>>>> b3d5e06 (engraçado né? como as coisas funcionam...)
   const q = query(itemsCollectionRef, orderBy('createdAt', 'desc'));
   return collectionData(q, { idField: 'id' }) as Observable<Item[]>;
 }
@@ -53,12 +61,17 @@ addItem(item: Item) {
 }
 updateItem(item: Item ){
   const itemDocRef = doc(this.firestore, `items/${item.id}`);
+<<<<<<< HEAD
   return updateDoc(itemDocRef, { name: item.name, especie: item.especie, raca: item.raca, idade: item.idade, obsadd: item.obsadd,} );
+=======
+  return updateDoc(itemDocRef, { name: item.name, description: item.description });
+>>>>>>> b3d5e06 (engraçado né? como as coisas funcionam...)
 }
 deleteItem(id: string){
   const itemDocRef = doc(this.firestore, `items/${id}`);
   return deleteDoc(itemDocRef);
 }
+<<<<<<< HEAD
 getItems2(): Observable<Item2[]> {
   const items2CollectionRef = collection(this.firestore, 'items2');
   const q = query(items2CollectionRef, orderBy('createdAt', 'desc'));
@@ -85,4 +98,6 @@ updateItem2(item: Item2) {
     const itemDocRef = doc(this.firestore, `items2/${id}`);
     return deleteDoc(itemDocRef);
   }
+=======
+>>>>>>> b3d5e06 (engraçado né? como as coisas funcionam...)
 }

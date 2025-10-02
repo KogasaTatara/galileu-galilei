@@ -5,7 +5,10 @@ import { DataService, Item } from '../../services/data';
 import { LoadingController, ToastController } from '@ionic/angular';
 
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> b3d5e06 (engraçado né? como as coisas funcionam...)
 @Component({
   selector: 'app-page-detail',
   templateUrl: './page-detail.page.html',
@@ -16,10 +19,14 @@ export class PageDetailPage implements OnInit {
 
   item: Item = {
     name:'',
+<<<<<<< HEAD
     especie: '',
     raca: '',
     idade: 0,
     obsadd: ''
+=======
+    description:''
+>>>>>>> b3d5e06 (engraçado né? como as coisas funcionam...)
   };
 
   itemId: string | null = null;
