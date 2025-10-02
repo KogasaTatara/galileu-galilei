@@ -68,7 +68,7 @@ export class HomePage {
         {
           text: 'Excluir',
           handler: () => {
-            this.dataService.deleteItem(id);
+            this.dataService.deleteItem2(id);
           },
         },
       ],
