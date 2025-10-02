@@ -17,18 +17,21 @@ import { Observable } from 'rxjs';
 export interface Item {
   id?: string,
   name: string,
-  description: string,
+  especie?: string,
+  raca?: string,
+  idade?: number,
+  obsadd?: string,
   createdAt?: number,
 }
 @Injectable({
   providedIn: 'root'
 })
-export class Data {
+export class DataService {
 
 constructor(private firestore: Firestore){}
 
 getItems(): Observable<Item[]> {
-  const itemsCollectionRef = collection(this.firestore, 'itens');
+  const itemsCollectionRef = collection(this.firestore, 'items'); // <-- corrected
   const q = query(itemsCollectionRef, orderBy('createdAt', 'desc'));
   return collectionData(q, { idField: 'id' }) as Observable<Item[]>;
 }
@@ -42,7 +45,7 @@ addItem(item: Item) {
 }
 updateItem(item: Item ){
   const itemDocRef = doc(this.firestore, `items/${item.id}`);
-  return updateDoc(itemDocRef, { name: item.name, description: item.description });
+  return updateDoc(itemDocRef, { name: item.name, especie: item.especie, raca: item.raca, idade: item.idade, obsadd: item.obsadd });
 }
 deleteItem(id: string){
   const itemDocRef = doc(this.firestore, `items/${id}`);
