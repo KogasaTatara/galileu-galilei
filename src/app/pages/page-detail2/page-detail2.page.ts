@@ -1,25 +1,24 @@
 import { Component, OnInit } from '@angular/core';
 
 import { ActivatedRoute, Router } from '@angular/router';
-import { DataService, Item } from '../../services/data';
+import { DataService, Item2 } from '../../services/data';
 import { LoadingController, ToastController } from '@ionic/angular';
 
 
 
 @Component({
   selector: 'app-page-detail',
-  templateUrl: './page-detail.page.html',
-  styleUrls: ['./page-detail.page.scss'],
+  templateUrl: './page-detail2.page.html',
+  styleUrls: ['./page-detail2.page.scss'],
   standalone: false,
 })
-export class PageDetailPage implements OnInit {
+export class PageDetail2Page implements OnInit {
 
-  item: Item = {
+  item2: Item2 = {
     name:'',
-    especie: '',
-    raca: '',
-    idade: 0,
-    obsadd: ''
+    experiencia: '',
+    especial: '',
+    telefone: 0,
   };
 
   itemId: string | null = null;
@@ -45,10 +44,10 @@ export class PageDetailPage implements OnInit {
       message: 'Carregando item...'
     });
     await loading.present();
-    this.dataService.getItem(this.itemId!).subscribe(res => {
+    this.dataService.getItem2(this.itemId!).subscribe(res => {
       loading.dismiss();
      if (res) {
-      this.item = res;
+      this.item2 = res;
      } else {
       this.presentToast('Item não encontrado', 'danger');
       this.router.navigateByUrl('/home');
@@ -67,7 +66,7 @@ export class PageDetailPage implements OnInit {
     await loading.present();
 
     if (this.isNewItem) {
-      this.dataService.addItem(this.item).then(() => {
+      this.dataService.addItem2(this.item2).then(() => {
         loading.dismiss();
         this.presentToast('Item adicionado com sucesso', 'success');
         this.router.navigateByUrl('/home');
@@ -76,7 +75,7 @@ export class PageDetailPage implements OnInit {
         this.presentToast('Erro ao adicionar item', 'danger');
       });
 }   else {
-      this.dataService.updateItem(this.item).then(() => {
+      this.dataService.updateItem2(this.item2).then(() => {
         loading.dismiss();
         this.presentToast('Item atualizado com sucesso', 'success');
         this.router.navigateByUrl('/home');
