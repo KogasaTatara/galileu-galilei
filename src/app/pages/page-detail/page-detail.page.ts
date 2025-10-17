@@ -6,9 +6,13 @@ import { LoadingController, ToastController } from '@ionic/angular';
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> b3d5e06 (engraçado né? como as coisas funcionam...)
+=======
+
+>>>>>>> c949f71 (eu não tenho a menor ideia doque vai acontecer)
 @Component({
   selector: 'app-page-detail',
   templateUrl: './page-detail.page.html',
@@ -20,13 +24,19 @@ export class PageDetailPage implements OnInit {
   item: Item = {
     name:'',
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> c949f71 (eu não tenho a menor ideia doque vai acontecer)
     especie: '',
     raca: '',
     idade: 0,
     obsadd: ''
+<<<<<<< HEAD
 =======
     description:''
 >>>>>>> b3d5e06 (engraçado né? como as coisas funcionam...)
+=======
+>>>>>>> c949f71 (eu não tenho a menor ideia doque vai acontecer)
   };
 
   itemId: string | null = null;

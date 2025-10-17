@@ -13,6 +13,7 @@
         <ion-icon name="person-outline"></ion-icon>
       </ion-button>
     </ion-buttons>
+<<<<<<< HEAD
   </ion-toolbar>
 </ion-header>
 
@@ -71,11 +72,14 @@
     <ion-icon name="add"></ion-icon>
   </ion-button>
 </ion-buttons>
+=======
+>>>>>>> c949f71 (eu não tenho a menor ideia doque vai acontecer)
   </ion-toolbar>
 </ion-header>
 
 <ion-content class="ion-padding">
   <ion-list>
+
     <ion-item *ngIf="items.length === 0">
       <ion-label>Nenhum item cadastrado ainda.</ion-label>
     </ion-item>
@@ -88,19 +92,43 @@
 >>>>>>> 2dee289 (Initial commit)
 =======
     <ion-item-sliding *ngFor="let item of items">
-      <ion-item lines="full" button (click)="editItem(item)">
+      <ion-item lines="full" button (click)="editItem1(item)">
         <ion-label>
           <h2>{{ item.name }}</h2>
-          <p>{{ item.description }}</p>
+          <p>{{ item.raca }} - {{ item.especie }} - {{ item.idade }} anos</p>
+          <p>{{ item.obsadd }}</p>
         </ion-label>
       </ion-item>
-
       <ion-item-options side="end">
-        <ion-item-options color="danger" (click)="deleteItem(item.id!)">
+        <ion-item-option color="danger" (click)="deleteItem1(item.id!)">
           <ion-icon slot="icon-only" name="trash"></ion-icon>
-        </ion-item-options>
+        </ion-item-option>
       </ion-item-options>
     </ion-item-sliding>
+
+    <ion-item *ngIf="items2.length === 0">
+      <ion-label>Nenhum item2 cadastrado ainda.</ion-label>
+    </ion-item>
+
+    <ion-item-sliding *ngFor="let item2 of items2">
+      <ion-item lines="full" button (click)="editItem2(item2)">
+        <ion-label>
+          <h2>{{ item2.name }}</h2>
+          <p>{{ item2.experiencia }} - {{ item2.especial }}</p>
+          <p>{{ item2.telefone }}</p>
+        </ion-label>
+      </ion-item>
+      <ion-item-options side="end">
+        <ion-item-option color="danger" (click)="deleteItem2(item2.id!)">
+          <ion-icon slot="icon-only" name="trash"></ion-icon>
+        </ion-item-option>
+      </ion-item-options>
+    </ion-item-sliding>
+
   </ion-list>
+<<<<<<< HEAD
 >>>>>>> b3d5e06 (engraçado né? como as coisas funcionam...)
 </ion-content>
+=======
+</ion-content>
+>>>>>>> c949f71 (eu não tenho a menor ideia doque vai acontecer)
