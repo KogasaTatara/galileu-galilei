@@ -85,4 +85,8 @@ updateItem2(item: Item2) {
     const itemDocRef = doc(this.firestore, `items2/${id}`);
     return deleteDoc(itemDocRef);
   }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> origin/master

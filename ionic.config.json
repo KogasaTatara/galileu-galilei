@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD
   "name": "Ac1-Parte1-Tri3",
+=======
+  "name": "Galileu Galilei",
+>>>>>>> origin/master
   "integrations": {
     "capacitor": {}
   },

@@ -75,4 +75,8 @@ export class HomePage {
     });
     await alert.present();
   }
+<<<<<<< HEAD
 };
+=======
+};
+>>>>>>> origin/master

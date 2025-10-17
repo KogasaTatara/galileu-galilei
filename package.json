@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD
   "name": "Ac1-Parte1-Tri3",
+=======
+  "name": "galileu-galilei",
+>>>>>>> origin/master
   "version": "0.0.1",
   "author": "Ionic Framework",
   "homepage": "https://ionicframework.com/",
@@ -28,8 +32,13 @@
     "@capacitor/keyboard": "7.0.3",
     "@capacitor/status-bar": "7.0.3",
     "@ionic/angular": "^8.0.0",
+<<<<<<< HEAD
     "firebase": "^11.10.0",
     "ionicons": "^7.0.0",
+=======
+    "base": "^3.0.0",
+    "ionicons": "^7.4.0",
+>>>>>>> origin/master
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.15.0"

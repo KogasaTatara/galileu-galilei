@@ -8,6 +8,7 @@ const routes: Routes = [
   },
   {
     path: '',
+<<<<<<< HEAD
     redirectTo: 'login',
     pathMatch: 'full'
   },
@@ -27,6 +28,27 @@ const routes: Routes = [
     path: 'login',
     loadChildren: () => import('./pages/login/login.module').then( m => m.LoginPageModule)
   }
+=======
+    redirectTo: 'home',
+    pathMatch: 'full'
+  },
+  {
+    path: 'page-detail',
+    loadChildren: () => import('./pages/page-detail/page-detail.module').then( m => m.PageDetailPageModule)
+  },
+    {
+    path: 'page-detail/:id',
+    loadChildren: () => import('./pages/page-detail/page-detail.module').then( m => m.PageDetailPageModule)
+  },
+  {
+    path: 'page-detail2',
+    loadChildren: () => import('./pages/page-detail2/page-detail2.module').then( m => m.PageDetail2PageModule)
+  },
+      {
+    path: 'page-detail2/:id',
+    loadChildren: () => import('./pages/page-detail2/page-detail2.module').then( m => m.PageDetail2PageModule)
+  },
+>>>>>>> origin/master
 
 ];
 
@@ -36,4 +58,8 @@ const routes: Routes = [
   ],
   exports: [RouterModule]
 })
+<<<<<<< HEAD
 export class AppRoutingModule { }
+=======
+export class AppRoutingModule { }
+>>>>>>> origin/master

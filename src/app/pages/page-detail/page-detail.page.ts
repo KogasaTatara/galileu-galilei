@@ -94,4 +94,8 @@ export class PageDetailPage implements OnInit {
     });
     toast.present();
   }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> origin/master
