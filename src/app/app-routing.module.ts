@@ -11,10 +11,6 @@ const routes: Routes = [
     redirectTo: 'login',
     pathMatch: 'full'
   },
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> b3d5e06 (engraçado né? como as coisas funcionam...)
   {
     path: 'item-detail',
     loadChildren: () => import('./pages/page-detail/page-detail.module').then( m => m.PageDetailPageModule)
@@ -23,8 +19,6 @@ const routes: Routes = [
     path: 'item-detail/:id', 
     loadChildren: () => import('./pages/page-detail/page-detail.module').then( m => m.PageDetailPageModule)
   },
-<<<<<<< HEAD
-<<<<<<< HEAD
   {
     path: 'page-detail2',
     loadChildren: () => import('./pages/page-detail2/page-detail2.module').then( m => m.PageDetail2PageModule)
@@ -33,12 +27,6 @@ const routes: Routes = [
     path: 'page-detail2/:id',
     loadChildren: () => import('./pages/page-detail2/page-detail2.module').then( m => m.PageDetail2PageModule)
   },
-
-=======
->>>>>>> 2dee289 (Initial commit)
-=======
->>>>>>> b3d5e06 (engraçado né? como as coisas funcionam...)
-=======
   {
     path: 'register',
     loadChildren: () => import('./pages/register/register.module').then( m => m.RegisterPageModule)
@@ -47,8 +35,6 @@ const routes: Routes = [
     path: 'login',
     loadChildren: () => import('./pages/login/login.module').then( m => m.LoginPageModule)
   }
-
->>>>>>> c949f71 (eu não tenho a menor ideia doque vai acontecer)
 ];
 
 @NgModule({

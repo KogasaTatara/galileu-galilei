@@ -1,9 +1,6 @@
 {
-<<<<<<< HEAD
+
   "name": "galileu-galilei",
-=======
-  "name": "Ac1-Parte1-Tri3",
->>>>>>> 2dee289 (Initial commit)
   "version": "0.0.1",
   "author": "Ionic Framework",
   "homepage": "https://ionicframework.com/",
@@ -21,14 +18,7 @@
     "@angular/common": "^20.0.0",
     "@angular/compiler": "^20.0.0",
     "@angular/core": "^20.0.0",
-<<<<<<< HEAD
-<<<<<<< HEAD
     "@angular/fire": "^20.0.1",
-=======
->>>>>>> 2dee289 (Initial commit)
-=======
-    "@angular/fire": "^20.0.1",
->>>>>>> b3d5e06 (engraçado né? como as coisas funcionam...)
     "@angular/forms": "^20.0.0",
     "@angular/platform-browser": "^20.0.0",
     "@angular/platform-browser-dynamic": "^20.0.0",
@@ -39,16 +29,9 @@
     "@capacitor/keyboard": "7.0.3",
     "@capacitor/status-bar": "7.0.3",
     "@ionic/angular": "^8.0.0",
-<<<<<<< HEAD
-<<<<<<< HEAD
     "base": "^3.0.0",
     "ionicons": "^7.4.0",
-=======
-=======
     "firebase": "^11.10.0",
->>>>>>> b3d5e06 (engraçado né? como as coisas funcionam...)
-    "ionicons": "^7.0.0",
->>>>>>> 2dee289 (Initial commit)
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.15.0"

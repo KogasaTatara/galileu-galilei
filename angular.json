@@ -78,9 +78,6 @@
             },
             "development": {
               "buildTarget": "app:build:development"
-            },
-            "ci": {
-              "progress": false
             }
           },
           "defaultConfiguration": "development"
@@ -136,12 +133,9 @@
   "cli": {
     "schematicCollections": [
       "@ionic/angular-toolkit"
-<<<<<<< HEAD
+
     ],
     "analytics": false
-=======
-    ]
->>>>>>> 2dee289 (Initial commit)
   },
   "schematics": {
     "@ionic/angular-toolkit:component": {
